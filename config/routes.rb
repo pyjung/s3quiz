@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  
+  get "/" => "home#age"
+  
+  get "pass" => "home#pass"
+  
+  get "success" => "home#age"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
