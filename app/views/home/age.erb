@@ -8,6 +8,22 @@
         
         }
         
+        #outer { 
+            position: absolute;
+            top: 50%;
+            width: 700px;
+            height: 700px;
+            left: 50%;
+            margin: -350px 0px 0px -350px;
+        }
+        
+        #inner {
+            height: 500px;
+            width: 500px;
+            vertical-align: middle;
+            text-align: center;
+            
+        }
         </style>
         
         <scirpt>
@@ -37,37 +53,28 @@ window.onload = function() {                         // 페이지가 로딩되�
 
 }
 
-</script>
-            </scirpt>
+            </script>
     </head>
     
     <body>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mXlM9gP1jhM" frameborder="0" allowfullscreen></iframe>
-        
-        <br>
-        <a href="/pass">ACCEPTED!</a>
-        
-        <p> 멋사의 나이
-        <br> <%= @set %> 
-        <br> <%= @set_number %>
-        <br><br>2. 1번 나이에 2개 추가 후 나이 낮은 순으로 정렬
-        <br> <%= @set_arrange %>
-        <br> <%= @set_newnumber %>
-        <br> <br> 현재 시간은!
-        <br><span id="clock"></span>
-        
-        
-        
-        
-        
-        </p>
+        <div id="outer">
+            <div id="inner">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mXlM9gP1jhM" frameborder="0" allowfullscreen></iframe>
+                
+                <br>
+                <a href="/pass">ACCEPTED!</a>
+                
+                <p> 
+                    멋사의 나이
+                    <br> <%= @set %> 
+                    <br> <%= @set_number %>
+                    <br><br>2. 1번 나이에 2개 추가 후 나이 낮은 순으로 정렬
+                    <br> <%= @set_arrange %>
+                    <br> <%= @set_newnumber %>
+                    <br> <br> 현재 시간은!
+                    <br><span id="clock"></span>
+               </p>
+            </div>
+        </div>
     </body>
-    
-    
-    
-    
-    
-    
-    
-    
 </html>
